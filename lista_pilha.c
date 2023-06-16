@@ -1,3 +1,5 @@
+// ALUNO(A) : JOANA KUELVIA DE ARAUJO SILVA
+
 #include "lista_pilha.h"
 #include <stdio.h>
 #include <stdlib.h>
