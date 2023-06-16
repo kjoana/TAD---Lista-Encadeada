@@ -14,13 +14,6 @@ typedef struct {
     Node* top;
 } SLList;
 
-// SLList *SLLCreate();
-// int SLLDestroy(SLList *l);
-// int SLLAddNode(SLList *l, void *data);
-// void *SLLRemoveNode(SLList *l);
-// void *SLLFirstNode(SLList *l);
-
-
 SLList* createSLList();
 void SLLAddNode(SLList* sllist, int linha, int coluna) ;
 int isSLListEmpty(SLList* sllist) ;
