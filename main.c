@@ -1,3 +1,6 @@
+
+// ALUNO(A) : JOANA KUELVIA DE ARAUJO SILVA
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
