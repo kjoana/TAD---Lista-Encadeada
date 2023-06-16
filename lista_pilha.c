@@ -12,12 +12,11 @@ SLList* createSLList() {
     return sllist;
 }
 
-// Função para verificar se a pilha está vazia
+// Função para verificar se está vazia
 int isSLListEmpty(SLList* sllist) {
     return sllist->top == NULL;
 }
 
-// Função para empilhar um elemento na pilha
 void SLLAddNode(SLList* sllist, int linha, int coluna) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->linha = linha;
@@ -26,7 +25,6 @@ void SLLAddNode(SLList* sllist, int linha, int coluna) {
     sllist->top = newNode;
 }
 
-// Função para desempilhar o elemento do topo da pilha
 void SLLRemoveNode(SLList* sllist) {
     if (isSLListEmpty(sllist)) {
         printf("Erro: a pilha está vazia.\n");
@@ -37,7 +35,6 @@ void SLLRemoveNode(SLList* sllist) {
     free(topNode);
 }
 
-// Função para obter o elemento do topo da pilha sem desempilhá-lo
 Node* SLLFirstNode(SLList *l)  {
     if (isSLListEmpty(l)) {
         printf("Erro: a pilha está vazia.\n");
@@ -46,7 +43,7 @@ Node* SLLFirstNode(SLList *l)  {
     return l->top;
 }
 
-// Função para destruir a pilha
+// Função para destruir a lista
 void destroySLList(SLList* sllist) {
     Node* current = sllist->top;
     while (current != NULL) {
